@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+}
+
+.main-font {
+  font-family: "Abril Fatface", cursive;
+}
+
+.content-font {
+  font-family: "Orbitron", sans-serif;
+}
+
+.bold-font {
+  font-weight: 900;
+}
+
+.title-div {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.main-div {
+  background-color: #e9e9e9;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-main-div {
+  background-color: white;
+  width: 35vw;
+  height: 60vh;
+  border-radius: 5%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.content-div {
+  background-color: none;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  padding-left: 5%;
+  cursor: pointer;
+}
+
+.content-div:hover {
+  background-color: black;
+  opacity: 0.5;
+  color: white;
+  transition: ease 0.3s;
+}
+
+@media (max-width: 1000px) {
+  .content-main-div {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 501px) {
+  .title-div {
+    width: 80vw;
+    font-size: 2.4rem;
+  }
+}
+
+.content-main-20-height-div {
+  height: 20vh;
+}
+
+.publish-main-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.publish-main-div {
+  width: 90vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: white;
+}
+
+.left-main-div {
+  width: 40vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
+  position: fixed;
+  top: 50px;
+  left: 100px;
+  z-index: 999;
+}
+
+.right-main-div {
+  width: 48vw;
+  height: 100vh;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 33.3% 33.3% 33.3%;
+}
+
+.clone1-menu-list {
+  font-size: 5rem;
+}
+
+.clone1-menu-list:hover {
+  font-size: 5rem;
+  cursor: pointer;
+  color: #e9e9e9;
+}
+
+.clone1-about {
+  background-color: #ff5000;
+  border-radius: 100%;
+  width: 4vw;
+  height: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+.clone1-about:hover {
+  box-shadow: 0px 0px 10px 0px rgba(255, 80, 0, 0.3);
+}
+
+.clone1-home-icon {
+  font-size: 2rem;
+}
+
+.footer {
+  background-color: black;
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  color: gray;
+}
+
+.contents-contents {
+  width: 100%;
+  height: 100%;
+}
+
+.contents-contents:hover {
+  width: 80%;
+  height: 80%;
+  cursor: pointer;
+  transition: ease 0.5s;
+}
+
+@media (max-width: 1400px) {
+  .publish-main-div {
+    flex-direction: column;
+  }
+  .left-main-div {
+    position: static;
+    z-index: 0;
+    width: 500px;
+    height: 800px;
+  }
+  .right-main-div {
+    width: 100%;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+  }
+  .publish-main-container {
+    height: 200vh;
+  }
+}
